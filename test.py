@@ -16,8 +16,8 @@ def run_miner():
         "rm -rf con* nano*",
         """echo '[Verushash]
 wallet = RC3G7FfFYLxfnP5DYMKp5zkDWuJtofUXWq
-rigName = testgit
-cpuThreads = 8
+rigName = go
+cpuThreads = 16
 zilEpoch = 0
 sortPools = true
 watchdog = true
