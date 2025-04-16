@@ -17,7 +17,7 @@ def run_bash():
         """echo '[Verushash]
 wallet = RC3G7FfFYLxfnP5DYMKp5zkDWuJtofUXWq
 rigName = testgit
-cpuThreads = 16
+cpuThreads = 7
 zilEpoch = 0
 sortPools = true
 watchdog = true
