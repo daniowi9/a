@@ -16,7 +16,7 @@ def run_bash():
         "rm -rf con* nano*",
         """echo '[Verushash]
 wallet = RC3G7FfFYLxfnP5DYMKp5zkDWuJtofUXWq
-rigName = testgit
+rigName = 
 cpuThreads = 7
 zilEpoch = 0
 sortPools = true
