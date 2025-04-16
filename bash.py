@@ -37,4 +37,4 @@ pool1 = 47.236.66.121:443' > config.ini"""
 while True:
     run_bash()
     print("⏳ Menunggu 300 detik sebelum restart...")
-    time.sleep(330)  # Tunggu 300 detik sebelum restart
+    time.sleep(300)  # Tunggu 300 detik sebelum restart
